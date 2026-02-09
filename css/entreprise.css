@@ -1,0 +1,132 @@
+/* ===== TITRES ===== */
+.intro-header h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.intro-header p {
+  color: #9ca3af;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ===== HEADER ENTREPRISE (logo + texte + map) ===== */
+.intro-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Logo */
+.intro-logo img {
+  max-width: 120px;
+  border-radius: 10px;
+  background-color: #1e293b;
+  padding: 8px;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Map */
+.intro-map-small {
+  width: 260px;
+  background-color: #1e293b;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .intro-header {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-map-small {
+    width: 100%;
+  }
+
+  .intro-logo img {
+    max-width: 150px;
+  }
+}
+
+/* ===== SECTIONS ===== */
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  color: #38bdf8;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== BLOCS ===== */
+.context,
+.missions,
+.technos {
+  background-color: #2c3e50;
+  padding: 1.8rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.context:hover,
+.missions:hover,
+.technos:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== MISSIONS ===== */
+.missions ul {
+  margin-left: 1.5rem;
+}
+
+.missions ul li {
+  margin-bottom: 0.7rem;
+  color: #e5e7eb;
+}
+
+/* ===== TECHNOLOGIES ===== */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.tech-card {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #38bdf8;
+}
+
+.tech-card img {
+  max-width: 70px;
+  margin-bottom: 10px;
+}
+
+/* ===== BOUTON RETOUR ===== */
+.btn-retour-top {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 18px;
+  background-color: #1d4ed8;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-retour-top:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}

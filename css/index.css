@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e293b; /* Fond sombre */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* HEADER / NAVBAR */
+header {
+  background-color: #020617;
+  border-bottom: 2px solid #1f2937;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.nav-links a {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+/* Section "Bienvenue sur mon Portfolio" */
+.welcome-text {
+  text-align: center;  /* Centrer le texte */
+  color: white;  /* Texte blanc */
+  font-size: 2rem;  /* Taille du texte */
+  font-weight: bold;  /* Gras */
+  margin-top: 2rem;  /* Un peu d'espace sous la barre de navigation */
+  margin-bottom: 2rem; /* Un peu d'espace après le message */
+  letter-spacing: 0.1em;  /* Espacement des lettres */
+}
+
+/* SECTION QUI SUIS-JE */
+.qui-suis-je {
+  margin-bottom: 3rem; /* Un peu d'espace après la section */
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+}
+
+.profile-img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+
+  border-radius: 12px; /* rectangle légèrement arrondi */
+  border: 2px solid #334155; /* gris sombre propre */
+  background-color: #020617;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.presentation p {
+  font-size: 1.1rem;
+}
+
+/* Conteneur pour les boutons LinkedIn et Language */
+.buttons-container {
+  display: flex;
+  justify-content: center;  /* Centrer les boutons horizontalement */
+  gap: 1rem;  /* Espacement entre les boutons */
+  margin-top: 2rem;  /* Un peu d'espace entre la section et les boutons */
+  margin-bottom: 2rem;  /* Un peu d'espace sous les boutons */
+}
+
+/* Style des boutons LinkedIn et Language */
+.linkedin-btn, .lang-btn {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet au survol des boutons */
+.linkedin-btn:hover, .lang-btn:hover {
+  background-color: #38bdf8;
+  color: white;
+  transform: scale(1.05); /* Légère augmentation de la taille */
+  box-shadow: 0 0 10px rgba(56, 191, 248, 0.5); /* Ombre autour du bouton */
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid #1f2937;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  padding: 1rem 0;
+}

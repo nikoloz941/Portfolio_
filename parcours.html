@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Parcours – Nikoloz Feroiani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS commun et spécifique -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/parcours.css"> <!-- CSS spécifique à cette page -->
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="nav-logo">NIKOLOZ FEROIANI</div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html" class="active">Parcours</a>
+      <a href="competence.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Introduction -->
+  <section class="intro">
+    <h1>Mon parcours</h1>
+    <p>
+      Étudiant en BTS SIO option SISR, orienté systèmes, réseaux et infrastructure.
+      Mon parcours est construit de manière progressive, avec une forte approche terrain
+      grâce aux stages et projets techniques.
+    </p>
+  </section>
+
+  <!-- Parcours scolaire -->
+  <section class="timeline">
+    <h2>Parcours scolaire</h2>
+
+    <div class="step">
+      <span>2024 – 2026</span>
+      <h3>BTS SIO – Option SISR</h3>
+      <p>Lycée Parc de Vilgénis – Massy</p>
+    </div>
+
+    <div class="step">
+      <span>2021 – 2024</span>
+      <h3>Bac Professionnel SN – option RISC</h3>
+      <p>Lycée professionnel Paul Bert – Maisons-Alfort</p>
+    </div>
+  </section>
+
+  <!-- Expériences professionnelles -->
+  <section class="stages">
+    <h2>Expériences professionnelles</h2>
+
+   <div class="stage">
+  <h3>
+    <a href="acknowledge.html">Acknowledge – Stage BTS 2ᵉ année</a>
+  </h3>
+  <span>Support & infrastructure</span>
+  <ul>
+    <li>Support utilisateurs niveau 2</li>
+    <li>Gestion des accès sécurisés (BeyondTrust)</li>
+    <li>Administration de machines virtuelles (vCenter)</li>
+    <li>Analyse et optimisation de règles firewall</li>
+    <li>Participation à des environnements Azure</li>
+  </ul>
+</div>
+
+
+  <div class="stage">
+  <h3>
+    <a href="ohmytel.html">Oh My Tel – Stage BTS 1ʳᵉ année</a>
+  </h3>
+  <span>Technicien informatique – Support & infrastructure</span>
+  <ul>
+    <li>Interventions informatiques chez les clients</li>
+    <li>Montage et configuration de postes informatiques</li>
+    <li>Dépannage matériel et périphériques</li>
+    <li>Support utilisateur niveau 1</li>
+    <li>Installation de logiciels et systèmes d’exploitation</li>
+    <li>Gestion de petites infrastructures réseau</li>
+    <li>Documentation des interventions et suivi du parc informatique</li>
+  </ul>
+</div>
+
+
+
+    <!-- Stage de terminale -->
+    <div class="stage">
+      <h3>Stage Terminale (2023 – 2024)</h3>
+      <span>Deux stages réalisés dans des entreprises différentes</span>
+      <ul>
+        <li>Stage 1 : Réseaux et maintenance de matériel informatique</li>
+        <li>Stage 2 : Support utilisateur et gestion de parc informatique</li>
+      </ul>
+    </div>
+
+    <!-- Stage de première -->
+    <div class="stage">
+      <h3>Stage Première (2022 – 2023)</h3>
+      <span>Deux stages dans la même entreprise</span>
+      <ul>
+        <li>Stage 1 : Déploiement de postes et maintenance préventive</li>
+        <li>Stage 2 : Gestion de réseau et assistance utilisateur de premier niveau</li>
+      </ul>
+    </div>
+
+    <!-- Stage de seconde -->
+    <div class="stage">
+      <h3>Stage Seconde (2021 – 2022)</h3>
+      <span>Deux stages réalisés dans des entreprises différentes</span>
+      <ul>
+        <li>Stage 1 : Découverte du monde professionnel et observation des processus informatiques</li>
+        <li>Stage 2 : Participation à des tâches de maintenance et suivi d'incidents</li>
+      </ul>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    Portfolio BTS SIO SISR – Nikoloz Feroiani ©
+  </div>
+</footer>
+
+<script>
+  // JavaScript pour l'animation de l'ouverture des cartes de stage
+  const stages = document.querySelectorAll('.stage h3');
+  stages.forEach(stage => {
+    stage.addEventListener('click', function() {
+      const parent = this.parentElement;
+      parent.classList.toggle('open'); // Ajoute ou enlève la classe "open" pour afficher/cacher le contenu
+    });
+  });
+</script>
+
+</body>
+</html>

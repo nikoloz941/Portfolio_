@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projets – Portfolio BTS SIO SISR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/projets.css">
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+<div class="nav-logo">NIKOLOZ FEROIANI</div>
+<nav class="nav-links">
+<a href="index.html">Accueil</a>
+<a href="parcours.html">Parcours</a>
+<a href="competence.html">Compétences</a>
+<a href="projets.html" class="active">Projets</a>
+<a href="veille.html">Veille</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+
+<!-- INTRO -->
+<section class="intro">
+<h1>Projets</h1>
+<p>
+Voici une sélection de projets réalisés en formation et en stage, illustrant les compétences du <strong>Bloc 1</strong>.
+</p>
+</section>
+
+<!-- GRILLE DE PROJETS -->
+<section class="project-grid">
+
+<!-- ========================= -->
+<!-- 1) PROJET LLD – ACKNOWLEDGE -->
+<!-- ========================= -->
+
+<div class="project-card" onclick="document.getElementById('modal-lld').style.display='block'">
+<h2>Projet LLD – Acknowledge</h2>
+</div>
+
+<div id="modal-lld" class="modal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('modal-lld').style.display='none'">&times;</span>
+
+<!-- Logo -->
+<img src="img/ack_nowledge_logo.jpg" alt="Logo Acknowledge" style="width:180px; display:block; margin:0 auto 20px;">
+
+<!-- Section 1 : Présentation -->
+<h2>Qu’est-ce que le LLD ?</h2>
+<p>
+Le LLD (Low-Level Design) est un document technique permettant de représenter précisément 
+l’architecture réseau d’une entreprise. Il détaille les équipements, les VLAN, les adresses IP, 
+les liens physiques, les services et les règles de sécurité.
+</p>
+
+<!-- Section 2 : Contexte -->
+<h2>Contexte</h2>
+<p>
+Projet réalisé durant mon stage chez <strong>Acknowledge</strong>.  
+Objectif : cartographier l’intégralité du réseau interne, vérifier les prises RJ45, documenter 
+ et produire un schéma réseau professionnel.
+</p>
+
+<!-- Section 3 : Architecture réseau -->
+<h2>Architecture réseau (LLD)</h2>
+<p>Voici un exemple de représentation du réseau (schéma simplifié) :</p>
+
+<img src="img/schéma LLD.png" alt="Schéma LLD" style="width:80%; display:block; margin:10px auto; border-radius:10px;">
+
+<ul>
+<li>Switch principal + switches secondaires</li>
+<li>VLAN utilisateurs / serveurs / invités</li>
+<li>Plan d’adressage IP</li>
+<li>Brassage RJ45 vérifié et corrigé</li>
+<li>Documentation complète de l’infrastructure</li>
+</ul>
+
+<!-- Section 4 : Actions réalisées -->
+<h2>Actions réalisées</h2>
+<ul>
+<li>Repérage de toutes les prises RJ45</li>
+<li>Analyse des baies de brassage</li>
+<li>Création du schéma LLD complet</li>
+<li>Documentation</li>
+</ul>
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- 2) PROJET STATION F -->
+<!-- ========================= -->
+
+<div class="project-card" onclick="document.getElementById('modal-stationf').style.display='block'">
+<h2>Projet AP – Station F (Infrastructure réseau)</h2>
+</div>
+
+<div id="modal-stationf" class="modal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('modal-stationf').style.display='none'">&times;</span>
+
+<img src="img/station f.png" alt="Logo Station F" style="width:200px; display:block; margin:0 auto 20px;">
+
+<h2>Qu’est-ce que Station F ?</h2>
+<p>Station F est le plus grand incubateur de startups au monde, situé à Paris.</p>
+
+<img src="img/stationf-bat.png" alt="Station F" style="width:80%; display:block; margin:10px auto;">
+
+<h2>Contexte</h2>
+<p>Projet sur le site de Lyon : mise en place d’une infrastructure réseau complète.</p>
+
+<h2>Actions réalisées</h2>
+<ul>
+<li>Configuration du switch cœur : VLAN, SVI, STP, LACP</li>
+<li>Supervision via CheckMK</li>
+<li>Logs via Kibana</li>
+<li>Comptes SSH nominatifs</li>
+<li>Tests de connectivité</li>
+</ul>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- 3) PROJET LAB -->
+<!-- ========================= -->
+
+<div class="project-card" onclick="document.getElementById('modal-lab').style.display='block'">
+<h2>Lab individuel – VM & Serveurs</h2>
+</div>
+
+<div id="modal-lab" class="modal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('modal-lab').style.display='none'">&times;</span>
+
+<h2>Qu’est-ce que le Lab ?</h2>
+<p>Laboratoire individuel pour tester et monter des machines virtuelles.</p>
+
+<h2>Contexte</h2>
+<p>Création d’un environnement VM complet pour simuler un réseau.</p>
+
+<h2>Actions réalisées</h2>
+<ul>
+<li>VM Windows 11</li>
+<li>VM Windows Server</li>
+<li>File server</li>
+<li>Tests réseau</li>
+<li>Supervision CheckMK</li>
+</ul>
+
+<h2>Commandes</h2>
+<pre style="background:#1f2937; color:#e5e7eb; padding:10px; border-radius:8px;">
+ipconfig /all
+ping 192.168.10.1
+</pre>
+
+</div>
+</div>
+
+</section>
+
+<section class="oral-info">
+<p>
+Les détails techniques de chaque projet sont présentés lors de l’oral.
+</p>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+Portfolio BTS SIO SISR – Nikoloz Feroiani ©
+</div>
+</footer>
+
+</body>
+</html>
