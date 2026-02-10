@@ -1,34 +1,58 @@
 .accueil {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 60px 20px;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .photo-profil {
-width: 180px;
-height: 180px;
-border-radius: 50%;
-object-fit: cover;
-margin-bottom: 20px;
-border: 3px solid #38bdf8;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #38bdf8;
 }
 
 .intro-vitrine h1 {
-font-size: 2.5rem;
-color: #38bdf8;
-margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
 }
 
 .intro-vitrine h2 {
-font-size: 1.8rem;
-color: #e5e7eb;
-margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #e5e7eb;
+    margin-bottom: 10px;
 }
 
 .intro-vitrine h3 {
-font-size: 1.4rem;
-color: #9ca3af;
+    font-size: 1.4rem;
+    color: #9ca3af;
+}
+
+/* ===== Boutons CV & LinkedIn ===== */
+
+.cv-linkedin {
+    display: flex;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.pill {
+    padding: 8px 20px;
+    border: 2px solid #38bdf8;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #38bdf8;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill:hover {
+    background-color: rgba(56, 189, 248, 0.12);
+    transform: translateY(-2px);
 }
