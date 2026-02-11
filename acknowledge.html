@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/entreprise.css">
 </head>
+<script>
+function flipCard(card) {
+  const allCards = document.querySelectorAll('.tech-card');
+  allCards.forEach(c => {
+    if (c !== card) {
+      c.classList.remove('flipped');
+    }
+  });
+  card.classList.toggle('flipped');
+}
+</script>
 
 <body>
 
@@ -92,63 +103,127 @@
     </ul>
   </section>
 
-  <!-- Technologies utilisées -->
+<!-- Technologies utilisées -->
+<section class="tech-section">
+  <h2>Technologies utilisées</h2>
+
   <div class="tech-grid">
-    <h2>Technologies utilisées</h2>
-  <div class="tech-card">
-    <img src="img/netskope.jpg" alt="Netskope">
-    <p>Netskope</p>
-  </div>
 
-  <div class="tech-card">
-    <img src="img/okta.png" alt="Okta">
-    <p>Okta</p>
-  </div>
+    <!-- Netskope -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/netskope.jpg" alt="Netskope">
+          <p>Netskope</p>
+        </div>
+        <div class="tech-back">
+          <h3>Netskope</h3>
+          <p>Protège les applications cloud et sécurise l’accès aux données.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/rapid7.png" alt="Rapid7">
-    <p>Rapid7</p>
-  </div>
+    <!-- Okta -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/jira.png" alt="jira">
+          <p>Jira</p>
+        </div>
+        <div class="tech-back">
+          <h3>Jira</h3>
+          <p>Outil de gestion de tickets suivre et organiser les demandes de support.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/paloalto.png" alt="Palo Alto Networks">
-    <p>Palo Alto Networks</p>
-  </div>
+    <!-- Rapid7 -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/rapid7.png" alt="Rapid7">
+          <p>Rapid7</p>
+        </div>
+        <div class="tech-back">
+          <h3>Rapid7</h3>
+          <p>Détecte les vulnérabilités et surveille la sécurité du système.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/proofpoint.png" alt="Proofpoint">
-    <p>Proofpoint</p>
-  </div>
+    <!-- BeyondTrust -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/logo_beyondtrust.png" alt="BeyondTrust">
+          <p>BeyondTrust</p>
+        </div>
+        <div class="tech-back">
+          <h3>BeyondTrust</h3>
+          <p>Sécurise les accès à privilèges et contrôle les connexions sensibles.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/logo_beyondtrust.png" alt="BeyondTrust">
-    <p>BeyondTrust</p>
-  </div>
+    <!-- Fortinet -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/fortinet.png" alt="Fortinet">
+          <p>Fortinet</p>
+        </div>
+        <div class="tech-back">
+          <h3>Fortinet</h3>
+          <p>Pare-feu qui filtre et sécurise le trafic réseau de l’entreprise.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/illumio.png" alt="Illumio">
-    <p>Illumio</p>
-  </div>
+    <!-- Cybereason -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/cybereason.png" alt="Cybereason">
+          <p>Cybereason</p>
+        </div>
+        <div class="tech-back">
+          <h3>Cybereason</h3>
+          <p>Détecte et bloque les menaces sur les postes utilisateurs.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/fortinet.png" alt="Fortinet">
-    <p>Fortinet</p>
-  </div>
+    <!-- SentinelOne -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/sentinelle one.png" alt="SentinelOne">
+          <p>SentinelOne</p>
+        </div>
+        <div class="tech-back">
+          <h3>SentinelOne</h3>
+          <p>Antivirus nouvelle génération avec détection automatique des attaques.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/cybereason.png " alt="Cybereason">
-    <p>Cybereason</p>
-  </div>
+    <!-- AWS -->
+    <div class="tech-card" onclick="flipCard(this)">
+      <div class="tech-inner">
+        <div class="tech-front">
+          <img src="img/aws.png" alt="AWS">
+          <p>AWS</p>
+        </div>
+        <div class="tech-back">
+          <h3>AWS</h3>
+          <p>Plateforme cloud permettant d’héberger serveurs et services en ligne.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="tech-card">
-    <img src="img/sentinelle one.png" alt="SentinelOne">
-    <p>SentinelOne</p>
   </div>
+</section>
 
-  <div class="tech-card">
-    <img src="img/aws.png" alt="AWS">
-    <p>AWS</p>
-  </div>
 
 </div>
 

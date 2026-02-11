@@ -79,3 +79,17 @@ font-size:1.5rem;
 font-weight:bold;
 cursor:pointer;
 }
+/* Schéma physique Station F */
+.schema-stationf {
+    width: 85%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    background-color: #020617;
+}
+
+
+

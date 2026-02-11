@@ -75,13 +75,6 @@ Objectif : cartographier l’intégralité du réseau interne, vérifier les pri
 
 <img src="img/schéma LLD.png" alt="Schéma LLD" style="width:80%; display:block; margin:10px auto; border-radius:10px;">
 
-<ul>
-<li>Switch principal + switches secondaires</li>
-<li>VLAN utilisateurs / serveurs / invités</li>
-<li>Plan d’adressage IP</li>
-<li>Brassage RJ45 vérifié et corrigé</li>
-<li>Documentation complète de l’infrastructure</li>
-</ul>
 
 <!-- Section 4 : Actions réalisées -->
 <h2>Actions réalisées</h2>
@@ -114,13 +107,21 @@ Objectif : cartographier l’intégralité du réseau interne, vérifier les pri
 <img src="img/stationf-bat.png" alt="Station F" style="width:80%; display:block; margin:10px auto;">
 
 <h2>Contexte</h2>
-<p>Projet sur le site de Lyon : mise en place d’une infrastructure réseau complète.</p>
+<p>Projet réalisé à l’<strong>ENS Curiosity-IT</strong>.  
+J’étais chargé d’intervenir sur le site de Lyon pour mettre en place une infrastructure réseau complète et supervisée, en lien avec le fonctionnement d’un incubateur de startups.</p>
+
+<h2>Schéma physique – Station F</h2>
+<p>Représentation physique de l’infrastructure réseau (baies, switches, liaisons).</p>
+
+<img src="img/schéma_physique_stationF.png"
+     alt="Schéma physique de l'infrastructure réseau de Station F"
+     class="schema-stationf">
+
 
 <h2>Actions réalisées</h2>
 <ul>
-<li>Configuration du switch cœur : VLAN, SVI, STP, LACP</li>
-<li>Supervision via CheckMK</li>
-<li>Logs via Kibana</li>
+<li>Configuration du switch cœur : Config de base (nom, mot de passe)VLAN, SVI, STP, LACP</li>
+<li>Création des dashboards via CheckMK</li>
 <li>Comptes SSH nominatifs</li>
 <li>Tests de connectivité</li>
 </ul>
