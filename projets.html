@@ -130,39 +130,54 @@ J’étais chargé d’intervenir sur le site de Lyon pour mettre en place une i
 </div>
 
 <!-- ========================= -->
-<!-- 3) PROJET LAB -->
+<!-- 3) PROJET KB - VERSION LÉGÈRE -->
 <!-- ========================= -->
 
-<div class="project-card" onclick="document.getElementById('modal-lab').style.display='block'">
-<h2>Lab individuel – VM & Serveurs</h2>
+<div class="project-card" onclick="document.getElementById('modal-kb').style.display='block'">
+  <h2>Création de KB – Documentation Technique</h2>
 </div>
 
-<div id="modal-lab" class="modal">
-<div class="modal-content">
-<span class="close" onclick="document.getElementById('modal-lab').style.display='none'">&times;</span>
+<div id="modal-kb" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('modal-kb').style.display='none'">&times;</span>
 
-<h2>Qu’est-ce que le Lab ?</h2>
-<p>Laboratoire individuel pour tester et monter des machines virtuelles.</p>
+    <!-- Logo + Entreprise -->
+    <div style="text-align:center; margin-bottom:20px;">
+      <img src="img/ack_nowledge_logo.jpg" alt="Logo Acknowledge" style="height:60px;">
+      <h3>Entreprise : Acknowledge</h3>
+    </div>
 
-<h2>Contexte</h2>
-<p>Création d’un environnement VM complet pour simuler un réseau.</p>
+    <h2>Contexte</h2>
+    <p>Rédaction de documentations techniques pour techniciens, basées sur les sources officielles.</p>
 
-<h2>Actions réalisées</h2>
-<ul>
-<li>VM Windows 11</li>
-<li>VM Windows Server</li>
-<li>File server</li>
-<li>Tests réseau</li>
-<li>Supervision CheckMK</li>
-</ul>
+    <h2>Actions</h2>
+    <ul>
+      <li>Analyse des technologies</li>
+      <li>Rédaction de procédures et guides pas-à-pas</li>
+      <li>Organisation d’une base de connaissances</li>
+    </ul>
 
-<h2>Commandes</h2>
-<pre style="background:#1f2937; color:#e5e7eb; padding:10px; border-radius:8px;">
-ipconfig /all
-ping 192.168.10.1
-</pre>
+    <h2>Outils</h2>
+    <div>
+      <img src="https://cdn.worldvectorlogo.com/logos/confluence-1.svg" alt="Confluence" style="height:50px; margin-right:10px;">
+      <img src="img/logo_beyondtrust.png" alt="BeyondTrust" style="height:50px;">
+    </div>
 
+    <h2>BeyondTrust KB</h2>
+    <ul>
+      <li>Mises à jour : automatique, manuelle Internet ou fichier</li>
+      <li>Certificats TLS : import ou Let’s Encrypt</li>
+      <li>Logs SAML/eLDAP : Users & Security → Security Providers → View Log</li>
+    </ul>
+
+    <div style="text-align:center; margin-top:15px;">
+      <img src="img/logo_beyondtrust.png" alt="BeyondTrust" style="height:80px;">
+      <p><em>Procédures basées sur la documentation officielle BeyondTrust.</em></p>
+    </div>
+  </div>
 </div>
+
+
 </div>
 
 </section>
